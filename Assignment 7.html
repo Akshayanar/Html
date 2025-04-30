@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            color: #ffffff; 
+            background: url(https://wallpaperaccess.com/full/5743550.jpg) no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            color: hsl(47, 39%, 95%); 
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 42px;
+            letter-spacing: 2px;
+          
+        }
+
+        
+        .container {
+            width: 85%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgb(162, 170, 172);
+         
+
+        .news-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.5); 
+            color: #fff; 
+        }
+
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+
+        .news-card img {
+            width: 250px;
+            height: 150px;
+            border-radius: 12px;
+            margin-right: 20px;
+            box-shadow: 0 4px 20px rgba(159, 19, 19, 0.2);
+        }
+
+        .news-card .content {
+            flex: 1;
+        }
+
+        .news-card h2 {
+            font-size: 28px;
+            color: #f4f3ee; 
+            margin-bottom: 10px;
+         
+        }
+
+        .news-card p {
+            font-size: 18px; 
+            line-height: 1.6;
+            color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        .news-card a {
+            font-size: 18px;
+            text-decoration: none;
+            color: #f6f20a;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .news-card a:hover {
+            color: #f2eeee;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        @media (max-width: 768px) {
+            .news-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .news-card img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            header {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Latest Space Research News
+    </header>
+
+    <div class="container">
+        
+        <div class="news-card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GHFS77cLVMUxyOO3EyUf7AHaD2&pid=Api&P=0&h=180" alt="Space Research Image">
+            <div class="content">
+                <h2>NASA Discovers Water on Exoplanet</h2>
+                <p>NASA scientists have recently discovered traces of water vapor in the atmosphere of a distant exoplanet located in the habitable zone. This discovery could pave the way for finding life beyond Earth.</p>
+                <a href="https://www.nasa.gov/press-release/nasa-discovers-water-vapor-on-exoplanet" target="_blank">Read Full Article</a>
+            </div>
+        </div>
+
+        
+        <div class="news-card">
+            <img src="https://assets.newatlas.com/dims4/default/3f51ef6/2147483647/strip/true/crop/1280x960+0+0/resize/1280x960!/quality/90/?url=http:%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fjames-webb-space-telescope-0.jpg" alt="Space Exploration Image">
+            <div class="content">
+                <h2>James Webb Telescope Sends Stunning Images of Nebula</h2>
+                <p>The James Webb Space Telescope has captured incredible high-resolution images of the Orion Nebula. These images provide a detailed look at the birth of stars and planetary systems in deep space.</p>
+                <a href="https://www.nasa.gov/mission_pages/webb/main/index.html" target="_blank">Read Full Article</a>
+            </div>
+        </div>
+
+        
+        <div class="news-card">
+            <img src="https://cdn.zmescience.com/wp-content/uploads/2020/11/univers_matter_ucr_1601450948489.jpg" alt="Astro Research Image">
+            <div class="content">
+                <h2>New Breakthrough in Dark Matter Research</h2>
+                <p>Scientists at CERN have made a breakthrough discovery in the study of dark matter. Their findings could lead to a better understanding of the mysterious substance that makes up most of the universe’s mass.</p>
+                <a href="https://home.cern/science/physics/dark-matter" target="_blank">Read Full Article</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Space Research News. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

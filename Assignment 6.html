@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Movie Picks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://wallpaperaccess.com/full/3295833.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #222;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e50914;
+      font-size: 3rem;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #000;
+      margin-bottom: 15px;
+      padding-left: 10px;
+    }
+
+    .category {
+      margin-bottom: 60px;
+    }
+
+    .scroll-section {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .scroll-section::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scroll-section::-webkit-scrollbar-thumb {
+      background: #e50914;
+      border-radius: 10px;
+    }
+
+    .card {
+      min-width: 320px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .card {
+        min-width: 260px;
+      }
+
+      .card img {
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍿 Netflix Movie Picks</h1>
+
+    <!-- English Thrillers -->
+    <div class="category">
+      <h2>🔪 English Thrillers</h2>
+      <div class="scroll-section">
+        <div class="card">
+          <img src="https://staticg.sportskeeda.com/editor/2023/01/8e794-16746269718644-1920.jpg" alt="Alice in Borderland">
+          <p><strong>Alice in Borderland</strong><br>A chilling survival game where every move can mean life or death in a twisted, deserted Tokyo.</p>
+        </div>
+        <div class="card">
+          <img src="" alt="Squid Game">
+          <p><strong>Squid Game</strong><br>Hundreds of cash-strapped contestants accept an invitation to compete in deadly children's games for a tempting prize.</p>
+        </div>
+        <div class="card">
+          <img src="" alt="A Good Girl’s Guide to Murder">
+          <p><strong>A Good Girl’s Guide to Murder</strong><br>A curious teenager reopens a closed murder case for her school project — but uncovers far more than she bargained for.</p>
+        </div>
+        <div class="card">
+          <img src="" alt="Money Heist">
+          <p><strong>Money Heist</strong><br>A criminal mastermind who goes by "The Professor" recruits eight people to carry out an ambitious plan to rob the Royal Mint of Spain.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Anime -->
+    <div class="category">
+      <h2>🎥 Anime</h2>
+      <div class="scroll-section">
+        <div class="card">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.4AhnPfGxM3IbsGopHBE9MQHaKS&pid=Api&P=0&h=180" alt="Demon Slayer">
+          <p><strong>Demon Slayer</strong><br>A young boy must fight demons after his family is slaughtered and his sister turns into one.</p>
+        </div>
+        <div class="card">
+          <img src="https://images5.alphacoders.com/606/606221.jpg" alt="Attack on Titan">
+          <p><strong>Attack on Titan</strong><br>Humanity fights for survival as colossal titans threaten to destroy the remnants of the human race.</p>
+        </div>
+        <div class="card">
+          <img src="https://wallpapercave.com/wp/wp11472106.jpg" alt="Spy x Family">
+          <p><strong>Spy x Family</strong><br>A spy, an assassin, and a telepath must pretend to be a family while hiding their secrets from one another.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
